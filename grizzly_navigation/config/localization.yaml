@@ -6,16 +6,16 @@ ekf_localization:
                  true, true, false,
                  false, false, false,
                  false, false, false]
-  odom0_differential: true
+  odom0_differential: false
 
   imu0: imu/data_compass
   imu0_config: [false, false, false,
-                false, false, false,
+                false, false, true,
                 false, false, false,
                 false, false, true,
                 false, false, false]
-  imu0_differential: true #fusing absolute position or orientation data should be done differentially-->
+  imu0_differential: false 
   odom_frame: odom
-  base_link_frame: base_footprint
+  base_link_frame: base_link
   world_frame: odom
 
